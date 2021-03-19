@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+   
+    <script src="/src/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <div class='player'>
+    <video class="video-screen" preload='auto' src="https://s3.eu-central-1.amazonaws.com/vitfl.codepen.io/wesbos-javascript30/video/652333414.mp4" type='video/mp4'  msallowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen>
+      Sorry, your browser doesn't support HTML5 video playback.
+    </video>
+    <div class='controls active'>
+      <button class='play start'></button>
+      <input type="range" class='volume-bar' value='70' min='0' max='100'>
+      <input type="range" class='time-bar' value='0' min='0' max=''>
+      <time class='time'>N/A</time>
+      <div class='speed'>
+        <select>
+          <option value='.25'>.25</option>
+          <option value='.5' >.5</option>
+          <option value='.75'>.75</option>
+          <option value='1' selected>1</option>
+          <option value='1.25'>1.25</option>
+          <option value='1.5' >1.5</option>
+          <option value='1.75'>1.75</option>
+          <option value='2'>2</option>
+        </select>
+        Скорость
+      </div>
+      <button class='fullscreen-btn'></button>
+    </div>
+  <input class='file-chooser' type='file'>
+  </div>
+
+    
+</body>
+</html>
